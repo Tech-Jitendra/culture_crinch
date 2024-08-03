@@ -15,7 +15,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-zinc-200">
-        <ResponsiveContainer />
+        {Array.from({ length: 4 }).map((item, index) => (
+          <div
+            key={index}
+            className={`w-full max-w-6xl my-6 ${
+              index % 2 === 0 ? "flex justify-start" : "flex justify-end"
+            }`}
+          >
+            <ResponsiveContainer />
+          </div>
+        ))}
       </main>
     </div>
   );

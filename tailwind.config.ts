@@ -15,7 +15,7 @@ const config: Config = {
       },
       rotate: {
         '11': '11deg',
-        '13': '13deg',
+        '15': '15deg',
       }
     },
   },
